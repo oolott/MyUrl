@@ -8,6 +8,7 @@
 			alert("页面已加载！path="+path);
 			if(!path)
 			{
+				alert("null");
 				parent.location='http://home.egowan.com:9091';
 			}
 			else if(path.indexof("test") !=-1)
@@ -16,6 +17,7 @@
 			}
 			else
 			{
+				alert("last");
 				parent.location='http://home.egowan.com:9091';
 			}
 		}
