@@ -5,7 +5,19 @@
 		function load()
 		{
 			alert("页面已加载！");
-			parent.location='http://home.egowan.com:9091'
+			var path = window.location.pathname;
+			if(!path)
+			{
+				parent.location='http://home.egowan.com:9091';
+			}
+			else if(path.indexof("test") !=-1)
+			{
+				parent.location='http://home.egowan.com:9000';
+			}
+			else
+			{
+				parent.location='http://home.egowan.com:9091';
+			}
 		}
 	</script>
 </head>
